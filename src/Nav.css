@@ -39,3 +39,27 @@ nav > ul > li a {
 .active {
   border-bottom: 2px solid white;
 }
+
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav > .logo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  nav > ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav > ul > li {
+    margin: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}

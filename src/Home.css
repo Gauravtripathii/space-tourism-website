@@ -1,0 +1,81 @@
+.Home {
+  display: flex;
+}
+
+.Home > .explore {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 5px;
+  background: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 110px;
+  bottom: 110px;
+  cursor: pointer;
+}
+
+.Home > .explore > span {
+  background: url(./media/background-home-desktop.jpg) 100% -100% repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Home > .intro {
+  width: 35%;
+  position: absolute;
+  bottom: 130px;
+  left: 100px;
+}
+
+.Home > .intro > p {
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.Home > .intro > span {
+  font-size: 100px;
+  font-weight: 200;
+  letter-spacing: 15px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.Home > .intro > div {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  .Home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Home > .intro {
+    width: 100%;
+    position: static;
+    margin-top: 70px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .Home > .intro > span {
+    padding: 0;
+  }
+
+  .Home > .intro > div {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  .Home > .explore {
+    position: static;
+    margin-top: 50px;
+  }
+}

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 .App {
@@ -10,4 +11,12 @@
   background: url(./media/background-home-desktop.jpg);
   background-size: cover;
   padding-top: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  .App {
+    padding-top: 10px;
+    background: url(./media/background-home-mobile.jpg);
+    background-size: cover;
+  }
 }
